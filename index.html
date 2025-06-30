@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config ={
+            theme: {
+    screens: {
+      'sm': '320px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    }
+  }
+        }
+    </script>
+</head>
+<body>
+    <!-- header sections starts -->
+     <div class="heading sticky top-0">
+        <header class="flex items-center justify-between max-w-[1175px] mx-auto text-white py-[25px]">
+            <div>
+                <h3 class="sm:px-[10px] font-semibold"><a href="#">Portfolio</a></h3>
+            </div>
+            <div>
+                <ul class="ul-list">
+                    <li class="items"><a href="#body-section" style="color: #0000ff;" class="font-semibold">Home</a></li>
+                    <li class="items"><a href="#about-me" class="font-semibold">About</a></li>
+                    <li class="items"><a href="#services" class="font-semibold">Services</a></li>
+                    <li class="items"><a href="#projects" class="font-semibold">Projects</a></li>
+                    <li class="items"><a href="#contact-us" class="font-semibold">Contact Us</a></li>
+                </ul>
+            </div>
+            <span class="w-8 h-8 text-black rounded-full mx-[20px] lg:hidden sm:block md:block"><img src="./menu.png" alt="" id="menu-icon"></span>
+        </header>
+        <nav id="mobile-menu" class="hidden">
+            <ul>
+                <li><a href="#body-section" style="color: blue;" class="font-semibold">Home</a></li>
+                <li><a href="#about-me" class="font-semibold">About</a></li>
+                <li><a href="#services" class="font-semibold">Services</a></li>
+                <li><a href="#projects" class="font-semibold">Projects</a></li>
+                <li><a href="#contact-us" class="font-semibold">Contact Us</a></li>
+            </ul>
+        </nav>
+     </div>
+    <!-- header sections ends -->
+    <!-- body section starts -->
+    <div class="w-[100%]" id="body-section">
+        <div class="max-w-[1175px] mx-auto flex lg:flex-row sm:flex-col-reverse md:flex-row items-center justify-around py-[50px] sm:pl-[20px] md:pl-[20px]">
+            <div>
+                <h1 class="lg:text-4xl md:text-2xl sm:text-2xl sm:mt-[10px] text-white font-medium">Hello,</h1>
+                <h3 class="lg:text-5xl md:text-3xl sm:text-3xl text-white font-bold mt-[10px]">My name is Prithiwis Das</h3>
+                <h2 class="lg:text-4xl md:text-2xl sm:text-2xl text-white font-semibold mt-[10px]">I am a <span class="" id="changing-text">Frontend Developer</span></h2>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/prithiwis.das.9"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="https://www.instagram.com/prithiwis/" class="ml-[15px]"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="https://web.telegram.org/a/" class="ml-[15px]"><i class="fa-brands fa-telegram fa-2xl"></i></a>
+                </div>
+                <button class="btn"><a href="#">Download CV</a></button>
+            </div>
+            <div class="circle flex items-center justify-center sm:justify-center md:justify-center lg:justify-start">
+                <img src="./portfolio-pic.jpg" class="lg:w-[300px] lg:h-[400px] md:w-[300px] md:h-auto shadow-lg shadow-indigo-500/50 rounded-md sm:w-[200px] sm:h-[200px]">
+            </div>
+        </div>
+    </div>
+    <!-- body section ends -->
+    <!-- About me starts -->
+    <div class="w-[100%]" id="about-me">
+        <div class="max-w-[1170px] lg:mx-auto py-[50px]">
+            <h3 class="text-center text-white font-bold lg:text-4xl md:text-3xl sm:text-3xl">About Me</h3>
+            <div class="grid lg:grid-cols-2 lg:grid-cols-[30%_auto] md:grid-cols-2 sm:grid-cols-1 gap-6 py-[50px]">
+                <div class="flex items-center justify-center sm:justify-center md:justify-center lg:justify-start">
+                    <img src="./portfolio-pic.jpg" class="lg:w-[300px] lg:h-[400px] sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-auto shadow-lg shadow-indigo-500/50 rounded-md">
+                </div>
+                <div>
+                    <p class="text-lg font-medium text-white lg:text-left md:text-center sm:text-center lg:text-lg sm:text-base sm:mx-[20px] md:mx-[20px]">
+                        Prithiwis Das FrontEnd Developer || Strong knowledge in Frontend development || HTML || CSS || JS || Tailwind || BOOTSTRAP.
+                        Overview: Dedicated and passionate Computer Science Engineering student with a strong focus on web development and programming. Currently pursuing my studies at Future Institute of Technology, I am driven by a desire to leverage technology to create innovative solutions. Proficient in HTML, CSS, BOOTSTRAP, Tailwind, and C programming, I strive to contribute my skills and knowledge to the field of web development. With a thirst for knowledge and a commitment to personal growth, I am eager to explore opportunities that allow me to apply my expertise and make a meaningful impact. Languages: English (Fluent) || Bengali (Fluent) || Hindi (Fluent) ||
+                    </p>
+                    <div class="flex items-center justify-center lg:justify-start md:justify-center sm:justify-center lg:mt-[20px] md:mt-[0px] sm:mt-[0px]">
+                        <button class="about-me-btn">More About me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About me ends -->
+    <!-- Services section starts-->
+     <div class="bg-black w-[100%]" id="services">
+        <div class="max-w-[1170px] lg:mx-auto py-[50px] md:mx-[30px] sm:mx-[30px]">
+            <h3 class="text-white text-center font-bold text-4xl">My Service</h3>
+            <div class="grid gap-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 py-[50px]">
+                <div class="bg-[#1b1b1e] p-4 rounded-xl service-card">
+                    <div class="flex items-center justify-center">
+                        <span class="flex items-center justify-center rounded-full w-14 h-14 bg-white"><i class="fa-solid fa-code fa-2xl"></i></span>
+                    </div>
+                    <h3 class="font-bold text-center text-white mt-[8px]">Web Development</h3>
+                    <p class="text-white text-center mt-[8px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, repellat, eaque eius explicabo natus earum ut autem velit beatae quibusdam nemo corrupti! Perferendis, nam placeat quaerat officiis veniam dignissimos temporibus!</p>
+                    <div class="flex items-center justify-center lg:justify-center md:justify-center sm:justify-center mt-[8px]">
+                        <button class="btn">Read more</button>
+                    </div>
+                </div>
+                <div class="bg-[#1b1b1e] p-4 rounded-xl service-card">
+                    <div class="flex items-center justify-center">
+                        <span class="flex items-center justify-center rounded-full w-14 h-14 bg-white"><i class="fa-solid fa-paintbrush fa-2xl"></i></span>
+                    </div>
+                    <h3 class="font-bold text-center text-white mt-[8px]">UI/UX Design</h3>
+                    <p class="text-white text-center mt-[8px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, repellat, eaque eius explicabo natus earum ut autem velit beatae quibusdam nemo corrupti! Perferendis, nam placeat quaerat officiis veniam dignissimos temporibus!</p>
+                    <div class="flex items-center justify-center lg:justify-center md:justify-center sm:justify-center mt-[8px]">
+                        <button class="btn">Read more</button>
+                    </div>
+                </div>
+                <div class="bg-[#1b1b1e] p-4 rounded-xl service-card">
+                    <div class="flex items-center justify-center">
+                        <span class="flex items-center justify-center rounded-full w-14 h-14 bg-white"><i class="fa-solid fa-signal fa-2xl"></i></span>
+                    </div>
+                    <h3 class="font-bold text-white text-center mt-[8px]">Digital Marketing</h3>
+                    <p class="text-white text-center mt-[8px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, repellat, eaque eius explicabo natus earum ut autem velit beatae quibusdam nemo corrupti! Perferendis, nam placeat quaerat officiis veniam dignissimos temporibus!</p>
+                    <div class="flex items-center justify-center lg:justify-center md:justify-center sm:justify-center mt-[8px]">
+                        <button class="btn">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Services section ends-->
+     <!-- project section starts -->
+      <div class="w-[100%]" id="projects">
+        <div class="max-w-[1175px] mx-auto">
+            <h3 class="text-center text-white font-bold lg:text-4xl md:text-3xl sm:text-3xl py-[50px]">My Projects</h3>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 card-container">
+                <div class="card">
+                    <img src="./project1 img.jpg" alt="">
+                    <div class="card-content">
+                        <button class="card-btn"><a href="https://github.com/prithiwis/OTT-Platform"><i class="fa-solid fa-link fa-2xl"></i></a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./project2 img.jpg" alt="">
+                    <div class="card-content">
+                        <button class="card-btn"><a href="https://github.com/prithiwis/Netflix-clone"><i class="fa-solid fa-link fa-2xl"></i></a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./portfolio-2.jpg" alt="">
+                    <div class="card-content">
+                        <button class="card-btn"><i class="fa-solid fa-link fa-2xl"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./portfolio-3.jpg" alt="">
+                    <div class="card-content">
+                        <button class="card-btn"><i class="fa-solid fa-link fa-2xl"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./portfolio-4.jpg" alt="">
+                    <div class="card-content">
+                        <button class="card-btn"><i class="fa-solid fa-link fa-2xl"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./portfolio-5.jpg" alt="">
+                    <div class="card-content">
+                        <button class="card-btn"><i class="fa-solid fa-link fa-2xl"></i></button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+      </div>
+      <!-- project section ends -->
+      <!-- contact us section starts -->
+       
+       <!-- contact us section ends --> 
+     <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
+</body>                
